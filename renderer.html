@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERADOR DE POKEMON</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <main class="flex">
+        <div class="col-md-6">
+            <table class="table table-hover table-dark">
+                <div id="uno">Historial</div>
+                <thead id="tabla">
+                    <tr id="table">
+                        <th class="colum" id="fecha" scope="col">Fecha</th>
+                        <th class="colum" id="idTable" scope="col">Id</th>
+                        <th class="colum" scope="col">Nombre</th>
+                    </tr>
+                </thead>
+                <tbody id="mylist">
+                    <!-- info -->
+                </tbody>
+            </table>
+        </div>
+        <article class="card">
+            <img id="api" src="./images/pokeapi.png" alt="api" height="30">
+            <img src="./images/bg-pattern-card.svg" id="imagen1" alt="imagen header card" class="card-header">
+            <div class="card-body">
+                <img src="" id="imagen2" alt="imagen" class="card-body-img" width="130" height="130">
+                <h1 id="nombre" class="card-body-title">
+                    <span>26</span>
+                </h1>
+                <p id="experiencia" class="card-body-text"></p>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-social">
+                    <h3 id="numeroPosicion"></h3>
+                    <p>ID</p>
+                </div>
+                <div class="card-footer-social">
+                    <h3 id="numeroAtaque"></h3>
+                    <p>Ataque</p>
+                </div>
+                <div class="card-footer-social">
+                    <h3 id="numeroDefensa"></h3>
+                    <p>Defensa</p>
+                </div>
+            </div>
+            <div id="textoIngresar">Ingrese un número (ID)</div>
+            <div>
+                <input type="text" id="ingreso" required/>
+            </div>
+            <div>
+                <button id="generar"><h2>GENERAR POKEMON</h2></button>
+            </div>
+            <div>
+                <button id="consultar">Consultar</button>
+            </div>
+            <div>
+                <button id="guardarDatosEnDB" disabled>Guardar</button>
+            </div>
+        </article>
+    </main>
+    <script src="renderer.js"></script>
+</body>
+</html>
